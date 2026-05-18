@@ -1,101 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ali – Publications</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            max-width: 900px;
-            line-height: 1.6;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        .paper {
-            margin-bottom: 18px;
-            padding: 12px;
-            border-left: 4px solid #3498db;
-            background: #f8f9fa;
-        }
-        .year {
-            margin-top: 30px;
-            font-size: 20px;
-            color: #34495e;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Ali – Publications</title>
+
+<style>
+    body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        margin: 0;
+        background: #f5f7fb;
+        color: #2c3e50;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        color: #666;
+        margin-bottom: 30px;
+    }
+
+    .year {
+        font-size: 20px;
+        margin: 35px 0 15px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #ddd;
+        font-weight: 600;
+    }
+
+    .paper {
+        background: white;
+        padding: 16px 18px;
+        margin-bottom: 15px;
+        border-left: 5px solid #3498db;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .paper:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    }
+
+    .title {
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .authors {
+        font-size: 14px;
+        color: #444;
+    }
+
+    .venue {
+        font-size: 13px;
+        color: #777;
+        margin-top: 3px;
+    }
+
+    .desc {
+        margin-top: 10px;
+        font-size: 13px;
+        color: #555;
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 8px;
+        font-size: 13px;
+        color: #1a73e8;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .tag {
+        display: inline-block;
+        font-size: 11px;
+        background: #eef4ff;
+        color: #2b5cff;
+        padding: 3px 8px;
+        border-radius: 12px;
+        margin-bottom: 6px;
+    }
+</style>
 </head>
 
 <body>
 
-<h1>Ali – List of Publications</h1>
-<p>This page contains the selected academic publications of Ali (based on Google Scholar profile).</p>
+<div class="container">
 
-<div class="year">2024–2026</div>
+<h1>Ali – Publications</h1>
+<div class="subtitle">Selected academic publications and research outputs</div>
+
+<div class="year">2026</div>
 
 <div class="paper">
-  <b>Few-Shot Airway-Tree Modeling Using Data-Driven Sparse Priors</b><br>
-  Ali Keshavarzi, Elsa Angelini<br>
-  <i>2024 IEEE International Symposium on Biomedical Imaging (ISBI)</i>, 2024<br>
-  Pages: 1–5, IEEE<br>
-  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10635527" target="_blank">DOI / Publisher Link</a>
+    <div class="tag">Dataset</div>
+    <div class="title">BifDet: A 3D Bifurcation Detection Dataset for Airway-Tree Modeling</div>
+    <div class="authors">Ali Keshavarzi, Quentin Bouniot, Benjamin M. Smith, Elsa Angelini</div>
+    <div class="venue">arXiv preprint arXiv:2604.24999</div>
+    <div class="desc">
+        First dataset for 3D airway bifurcation detection with annotated CT scans from ATM22.
+    </div>
+    <a href="https://arxiv.org/abs/2604.24999" target="_blank">View paper</a>
+</div>
+
+<div class="year">2025</div>
+
+<div class="paper">
+    <div class="tag">Thesis</div>
+    <div class="title">Deep Learning for Anatomically-Consistent Airway Tree Modeling</div>
+    <div class="authors">Ali Keshavarzi</div>
+    <div class="venue">PhD Thesis – Télécom Paris, Institut Polytechnique de Paris</div>
 </div>
 
 <div class="paper">
-  <b>Curriculum Learning for Few-Shot Domain Adaptation in CT-Based Airway Tree Segmentation</b><br>
-  Maxime Jacovella, Ali Keshavarzi, Elsa Angelini<br>
-  <i>2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI)</i>, 2025<br>
-  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10980795">
-    
-  </a>
+    <div class="tag">Conference</div>
+    <div class="title">Curriculum Learning for Few-Shot Domain Adaptation in CT-Based Airway Tree Segmentation</div>
+    <div class="authors">Maxime Jacovella, Ali Keshavarzi, Elsa Angelini</div>
+    <div class="venue">IEEE ISBI 2025</div>
+    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10980795" target="_blank">View paper</a>
 </div>
 
 <div class="paper">
-  <b>Deep Learning for Anatomically-Consistent Airway Tree Modeling: Visual Features, Loss Functions, Learning Strategies, and a Novel Detection Task</b><br>
-  Ali Keshavarzi<br>
-  <i>PhD Thesis, Télécom Paris – Institut Polytechnique de Paris</i>, 2025<br>
-  <p>
-    The thesis focuses on anatomically consistent airway tree modeling from chest CT scans using deep learning.
-    It introduces convolutional sparse priors, improved loss functions, and reformulates airway segmentation as a structured detection problem to improve robustness and generalization across domains.
-  </p>
-  <a href="https://scholar.google.com/citations?user=GBaZhSQAAAAJ&hl=en" target="_blank">
-    Google Scholar Profile
-  </a>
+    <div class="tag">Journal / Preprint</div>
+    <div class="title">Boundary-Emphasized Weight Maps for Distal Airway Segmentation</div>
+    <div class="authors">Ali Keshavarzi, Elsa Angelini</div>
+    <div class="venue">arXiv:2503.00242</div>
+    <div class="desc">
+        Boundary-aware loss improving topology and reducing airway segmentation errors.
+    </div>
+    <a href="https://arxiv.org/abs/2503.00242" target="_blank">View paper</a>
 </div>
 
 <div class="paper">
-  <div class="type">Journal / Preprint (arXiv)</div>
-  <b>Boundary-Emphasized Weight Maps for Distal Airway Segmentation</b><br>
-  Ali Keshavarzi, Elsa Angelini<br>
-  <i>arXiv preprint arXiv:2503.00242</i>, 2025<br> 
-
-  <p>
-    This work introduces the Boundary-Emphasized Loss (BEL), a loss function designed to improve
-    airway segmentation in lung CT scans by prioritizing boundary voxels. It addresses common
-    issues such as leakage, breakage, and class imbalance, with a focus on distal airway branches.
-    Evaluations on ATM22 and AIIB23 show improved topology preservation and segmentation accuracy.
-  </p>
-
-  <a href="https://arxiv.org/abs/2503.00242" target="_blank">View on arXiv</a>
+    <div class="tag">Conference</div>
+    <div class="title">Few-Shot Airway-Tree Modeling Using Data-Driven Sparse Priors</div>
+    <div class="authors">Ali Keshavarzi, Elsa Angelini</div>
+    <div class="venue">IEEE ISBI 2024</div>
+    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10635527" target="_blank">View paper</a>
 </div>
 
-<div class="paper">
-  <div class="type">Dataset / Journal Preprint</div>
-  <b>BifDet: A 3D Bifurcation Detection Dataset for Airway-Tree Modeling</b><br>
-  Ali Keshavarzi, Quentin Bouniot, Benjamin M. Smith, Elsa Angelini<br>
-  <i>arXiv preprint arXiv:2604.24999</i>, 2026<br>
-
-  <p>
-    This work introduces BifDet, the first publicly available dataset for 3D airway bifurcation detection in thoracic CT scans.
-    The dataset includes annotated bifurcation bounding boxes derived from the ATM22 cohort and is designed to support
-    detection-based learning approaches. Baseline experiments using RetinaNet and DETR demonstrate its utility for benchmarking
-    airway-tree modeling methods.
-  </p>
-
-  <a href="https://arxiv.org/abs/2604.24999" target="_blank">View on arXiv</a>
 </div>
 
 </body>
